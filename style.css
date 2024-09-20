@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --font-main: "Roboto", system-ui;
+
+    --color01: #e7ad70;
+    --color02: #fce1c4;
+    --color03: #302416;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+}
+
+.container{
+    border: 3px solid black;
+    width: max-content;
+    margin: 50px auto;
+    padding: 10px;
+    box-shadow: inset 5px 5px 7px rgba(0, 0, 0, 0.274);
+    border-radius: 10px;
+    background-color: var(--color01);
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+h1{
+    font-size: 3em;
+    color: var(--color03);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.295);
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    background-color: var(--color02);
+    border: 2px solid var(--color02);
+}
+
+input:focus{
+    outline-color: var(--color02);
+}
+
+input, 
+button{
+    padding: 8px;
+    width: 65%;
+
+}
+
+button{
+    background-color: forestgreen;
+    color: white;
+    border: 2px solid forestgreen;
+    border-radius: 2px;
+    margin-left: 16px;
+    width: 100px;
+}
+
+button:hover{
+    background-color: limegreen;
+    border: 2px solid limegreen;
+    cursor: pointer;
+}
+
+p#erro{
+    margin: 3px auto;
+    background-color: red;
+    color: white;
+    padding: 8px;
+    width: 95%;
+    border-radius: 3px;
+    display: none;
+}
+
+ul{
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+li p:hover{
+    cursor: pointer;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: var(--color02);
+}
+
